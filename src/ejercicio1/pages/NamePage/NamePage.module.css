@@ -1,0 +1,153 @@
+.pageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.pageContent {
+  width: 100%;
+  max-width: 500px;
+}
+
+.pageContent > h1 {
+  font-size: 3.2rem;
+  margin-block: 1rem;
+}
+
+.pageContent > h1 > span {
+  color: var(--color-primary);
+}
+
+.instructions {
+  margin-block: 1rem;
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+/** Form */
+.nameForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+}
+
+.nameForm > input {
+  width: 100%;
+  padding: 0.6em 0.8em;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: var(--color-background-secondary);
+  outline: none;
+  transition: border-color 0.25s;
+}
+
+.nameForm > input:focus,
+.nameForm > input:hover {
+  border-color: var(--color-tertiary);
+}
+
+.nameForm > button {
+  padding: 0.6em 1.2em;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: var(--color-secondary);
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+.nameForm > button:hover {
+  border-color: var(--color-tertiary);
+}
+
+.nameForm > button:active {
+  background-color: var(--color-tertiary);
+}
+
+/** Predictions */
+.predictionsSection {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+}
+
+hr {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-color: var(--color-background);
+}
+
+.predictionsSection > h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.predictionsSection > h2 > span {
+  color: var(--color-primary);
+}
+
+.predictions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+/** Nations */
+.nationsSection {
+  /* To fill one row (2 columns) */
+  grid-column: span 2;
+}
+
+.nationsSection table {
+  width: 100%;
+}
+
+.nationsSection tr {
+  gap: 0px;
+}
+
+.nationsSection tr:nth-child(odd) {
+  background-color: #2e2e2e;
+}
+
+.nationsSection tr:nth-child(even) {
+  background-color: #3c3848;
+}
+
+.nationsSection td {
+  border-radius: 3px;
+}
+
+.countryFlag {
+  font-size: 2rem;
+  padding-inline: 0.2em;
+  text-align: center;
+}
+
+.countryName {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-inline: 1rem;
+  text-align: initial;
+}
+
+.countryProbability {
+  font-size: 0.8rem;
+  font-style: italic;
+  padding-inline: 0.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+    justify-content: initial;
+  }
+}
