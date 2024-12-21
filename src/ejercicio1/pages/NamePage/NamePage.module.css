@@ -57,7 +57,7 @@
   border: 1px solid transparent;
   border-radius: 8px;
   font-size: 1em;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   outline: none;
   cursor: pointer;
   transition: border-color 0.25s, background-color 0.25s;

@@ -1,0 +1,42 @@
+.homePage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.homePage button {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.homePage button:nth-child(1) {
+  background-color: var(--color-background);
+}
+
+.homePage button:nth-child(1):hover,
+.homePage button:nth-child(1):active {
+  background-color: var(--color-primary);
+}
+
+.homePage button:nth-child(2) {
+  background-color: var(--color-background-secondary);
+}
+
+.homePage button:nth-child(2):hover,
+.homePage button:nth-child(2):active {
+  background-color: var(--color-tertiary);
+}
+
+.homePage > h1 {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

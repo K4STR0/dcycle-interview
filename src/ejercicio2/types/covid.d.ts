@@ -1,25 +1,25 @@
-interface CovidStatus {
-  date:     Date
-  states:   number
-  cases:    CovidMetrics
-  testing:  CovidMetrics
+export interface CovidStatus {
+  date: Date
+  states: number
+  cases: CovidMetrics
+  testing: CovidMetrics
   outcomes: Outcomes
 }
 
-interface CovidMetrics {
-  total:                  number | null
-  populationPercent:      number | null
-  changeFromPriorDay:     number | null
-  sevenDayChangePercent:  number | null
+export interface CovidMetrics {
+  total: number | null
+  populationPercent: number | null
+  changeFromPriorDay: number | null
+  sevenDayChangePercent: number | null
 }
 
-interface Outcomes {
+export interface Outcomes {
   hospitalized: Hospitalized
-  death:        number
+  death: CovidMetrics
 }
 
-interface Hospitalized {
-  currently:    number | null
-  inICU:        number | null
-  onVentilator: number | null
+export interface Hospitalized {
+  currently: CovidMetrics
+  inICU: CovidMetrics
+  onVentilator: CovidMetrics
 }

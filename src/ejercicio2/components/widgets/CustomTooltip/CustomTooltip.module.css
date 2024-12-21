@@ -1,0 +1,20 @@
+.tooltipContainer {
+  padding: 10px;
+  background-color: var(--color-background-secondary);
+}
+
+.tooltipContainer .label {
+  font-size: 16px;
+  font-weight: bold;
+  color: gray;
+}
+
+.tooltipContainer hr {
+  margin: 10px 0;
+  border: 1px solid gray;
+}
+
+.tooltipContainer .items {
+  display: flex;
+  flex-direction: column;
+}

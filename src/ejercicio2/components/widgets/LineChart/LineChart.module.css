@@ -1,0 +1,130 @@
+.chartContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  overflow: hidden;
+}
+
+/** Buttons */
+.buttonsSection {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 50px;
+}
+
+.hospitalized {
+  position: relative;
+  width: calc(100% - 25px);
+  padding: 10px;
+  margin-block: 10px;
+  border: 2px dotted gray;
+}
+
+.hospitalized > span {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: var(--color-background);
+  font-size: 0.7rem;
+  padding: 0 10px;
+}
+
+.buttonsSection button {
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--background-color);
+  border: 1px solid var(--color-background-secondary);
+  transition: background-color 0.3s;
+}
+
+.casesButton:hover,
+.casesButton.active {
+  background-color: var(--color-primary);
+}
+
+.testingButton:hover,
+.testingButton.active {
+  background-color: var(--color-secondary);
+}
+
+.deathsButton:hover,
+.deathsButton.active {
+  background-color: var(--color-tertiary);
+}
+
+.hospitalizedButton:hover,
+.hospitalizedButton.active {
+  background-color: gray;
+}
+
+.icuButton:hover,
+.icuButton.active {
+  background-color: #4d816c;
+}
+
+.ventilatorButton:hover,
+.ventilatorButton.active {
+  background-color: #82608d;
+}
+
+.buttonsSection select {
+  padding: 10px;
+  height: 100%;
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-background-secondary);
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.buttonsSection select:hover {
+  opacity: 1;
+}
+
+/** Aside Buttons */
+
+.sideButtons {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  z-index: 1;
+}
+
+.sideButtons > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.sideButtons > button:hover {
+  opacity: 1;
+}
+
+.reorderList {
+  position: absolute;
+  right: 50px;
+  top: 22px;
+  z-index: 1;
+}
+
+/** Chart */
+.areaChart {
+  position: relative;
+}
+
+.responsiveChart {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 140px); /* 140 px of 2 button sections*/
+}

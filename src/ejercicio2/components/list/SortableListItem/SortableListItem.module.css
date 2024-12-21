@@ -1,0 +1,10 @@
+.listItem {
+  width: 100%;
+  cursor: grab;
+  padding-inline: 10px;
+  padding-block: 5px;
+}
+
+.listItem:active {
+  cursor: grabbing;
+}

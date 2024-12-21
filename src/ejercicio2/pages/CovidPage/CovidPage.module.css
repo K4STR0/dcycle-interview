@@ -1,0 +1,23 @@
+.pageContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: calc(100dvw - 40px);
+  height: calc(100dvh - 40px);
+  gap: 20px;
+  padding: 20px;
+}
+
+.pageContainer button {
+  border-radius: 0;
+  border: 1px solid var(--color-background-secondary);
+}
+
+.widget {
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    grid-template-columns: 2fr;
+  }
+}
